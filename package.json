@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@reduxjs/toolkit": "^2.9.2",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.4",
     "vue": "^3.5.22"
   },
   "devDependencies": {
