@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import genericReducer from '../features/generic/genericSlice'
-// import { apiSlice } from '../services/apiSlice'
+// import { genericReducer } from './store/genericSlice'
+// import { apiSlice } from './store/apiSlice'
+import { setupListeners } from '@reduxjs/toolkit/query';
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,8 @@ export const store = configureStore({
     // ... Altri middleware custom vanno inseriti qui
   } */
 })
+
+setupListeners(store.dispatch);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
